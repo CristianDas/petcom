@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Perfil Administrador</title>
+</head>
+<body>
+    <nav>
+        <img src="../assets/img/logo.jpg" class="logo">
+        <div class="btns">
+            <div class="btn">
+                <a href="oscar.html"><input type="button" value="CITAS"></a>
+            </div>
+            <div class="btn">
+                <input type="button" value="AGENDA">
+            </div>
+            <div class="btn">
+                <input type="button" value="HISTORIA CLÍNICA">
+            </div>
+            <div class="btn">
+                <input type="button" value="PERFIL">
+            </div>
+            <div class="cerrar">
+                <input type="button" value="CERRAR SESIÓN">
+            </div>
+        </div>
+    </nav>
+    <div class="perfil">
+        <h1>ADMINISTRADOR</h1>
+        <h2>        </h2>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="header">
+            CRISTIAN VALLEJOS
+        </div>
+        <form class="form">
+            <table class="form">
+                <tr>
+                    <td><label for="tipoDocumento">Tipo de Documento:</label></td>
+                    <td><input type="text" id="tipoDocumento" name="tipoDocumento" readonly value="DNI"></td>
+                </tr>
+                <tr>
+                    <td><label for="numeroDocumento">Número de Documento:</label></td>
+                    <td><input type="text" id="numeroDocumento" name="numeroDocumento" readonly value="12345678"></td>
+                </tr>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" id="nombre" name="nombre" readonly value="Cristian"></td>
+                </tr>
+                <tr>
+                    <td><label for="apellido">Apellido:</label></td>
+                    <td><input type="text" id="apellido" name="apellido" readonly value="Vallejos"></td>
+                </tr>
+                <tr>
+                    <td><label for="telefono">Teléfono:</label></td>
+                    <td><input type="tel" id="telefono" name="telefono" readonly value="32666664"></td>
+                </tr>
+                <tr>
+                    <td><label for="correo">Correo:</label></td>
+                    <td><input type="email" id="correo" name="correo" readonly value="Cristian@example.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="clave">Clave:</label></td>
+                    <td><input type="password" id="clave" name="clave" readonly value="********"></td>
+                </tr>
+            </table>
+            <button class="edit-button" type="button" onclick="enableEdit()">Editar</button>
+            <button class="save-button disabled" type="button" onclick="saveProfile()">Guardar</button>
+        </form>
+    </div>
+        <br><br>
+    <footer>
+        <div class="vete">
+            <h1>Veterinaria Boss Bunny</h1>
+        </div>
+        <div class="contac">
+            <div class="text">
+                <h1>CONTACTO</h1>
+                <h2>Teléfono: 3147888196 • veterinaria@gmail.com</h2>
+            </div>
+            <div class="img">
+                <img src="../assets/img/logo.jpg" class="log" alt="Logo de la veterinaria">
+            </div>
+        </div>
+        <div class="toda">
+            <p>Todas las marcas y logotipos pertenecen a sus respectivas empresas. ® 2023. Creado por PETCOM ©.</p>
+        </div>
+    </footer>
+</body>
+</html>
