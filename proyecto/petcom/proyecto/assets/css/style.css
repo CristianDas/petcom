@@ -74,25 +74,56 @@ nav {
     font-size: 1.2rem;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.vete {
+    background-color: var(--4);
+    color: var(--1);
+    font-size: 0.8rem; /* Aquí quitamos las comillas alrededor de 'Merriweather' */
+    padding: 0.5rem;
+    padding-inline-start: 24rem;
+}
+
+.contac {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--5);
+    padding: 1.6rem;
+    font-family: 'Poppins';
+    padding-inline-start: 24rem;
+    border-bottom: .2rem solid rgba(53, 53, 53, 0.1);
+}
+
+.log {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 20rem;
+    border-radius: 4rem;
+}
 
 .perfil {
     position: relative;
     background-color: var(--5);
     color: var(--6);
     text-align: center;
-    padding: 130px;
+    padding: 150px;
 }
 
 .perfil h1 {
     margin: 0;
     font-size: 3rem;
-    font-size: 'Merriweather';
+    /* font-size: 'Merriweather'; // Esta línea debería eliminarse */
 }
 
 .perfil h2 {
     background: rgb(183, 180, 177);
     text-align: center;
-    width: 700px;
+    width: 950px;
     height: 75px;
     border-radius: 50px;
     position: absolute;
@@ -103,8 +134,7 @@ nav {
 
 .container {
     text-align: center;
-    font-size: 20PX;
-    font-family: 'Poppins';
+    font-size: 30PX;
 }
 
 .header {
@@ -142,62 +172,5 @@ table.form td {
 
 .form button.save.disabled {
     background-color: #ccc;
-    cursor: not-allowed;}
-
-
-
-
-
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .vete{
-        
-        background-color: var(--4);
-        color: var(--1);
-        font-size: 'Merriweather';
-        padding: 0.5rem;
-        padding-inline-start: 24rem;
-        font-size: .8rem;
-    }
-    .contac{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: var(--5);
-        padding: 1.6rem;
-        font-family: 'Poppins';
-        padding-inline-start: 24rem;
-        border-bottom: .2rem solid rgba(53, 53, 53, 0.1);
-    }
-    .log{
-        width: 4rem;
-        height: 4rem;
-        margin-right: 20rem;
-        border-radius: 4rem;
-    }
-    .contac h1{
-        color:var(--4);
-        font-size: 1rem;
-        font-weight: 00;
-        margin-left: 3rem;
-    }
-    .contac h2{
-        color:var(--1);
-        font-size: 1rem;
-        font-weight: 500;
-    }
-    .toda{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .toda h1{
-        color: var(--2);
-        font-size: 1rem;
-        font-weight: 500;
-    }
+    cursor: not-allowed;
+}

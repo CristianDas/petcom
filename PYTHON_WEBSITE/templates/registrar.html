@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href={{url_for('static',filename='css/registrar.css')}}>
+</head>
+<body>
+  <nav>
+    <img src="static/img/logo.jpg" class="logo">
+    <div class="btns">
+        <div class="btn">
+            <a href="oscar.html"><input type="submit" value="CITAS"></a>
+        </div>
+        <div class="btn">
+            <input type="submit" value="AGENDA">
+        </div>
+        <div class="btn">
+            <input type="submit" value="HISTORIA CLÍNICA">
+        </div>
+        <div class="btn">
+            <input type="submit" value="PERFIL">
+        </div>
+        <div class="cerrar">
+            <input type="submit" value="CERRAR SESIÓN">
+        </div>
+    </div>
+</nav>
+  <form action="/submit" method="post">
+    <h2>Registrar<br> Usuario</h2>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br><br>
+
+    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required><br><br>
+
+    <input type="text" id="tipodocumento" name="tipodocumento" placeholder="Tipo Documento" required><br><br>
+
+    <input type="number" id="numerodocumento" name="numerodocumento" placeholder="Numero Documento" required><br><br>
+
+    <input type="number" id="telefono" name="numerodocumento" placeholder="Telefono" required><br><br>
+
+    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+    <input type="password" id="clave" name="clave" placeholder="Clave"><br><br>
+
+    
+    <select id="rol" name="rol">
+      <option value="administrador">Administrador</option>
+      <option value="doctor">Doctor</option>
+      <option value="secretario">Secretario</option>
+      <option value="peluquero">Peluquero</option>
+    </select><br><br>
+
+
+
+    <input type="submit" value="Registrar">
+  </form>
+</body>
+</html>
